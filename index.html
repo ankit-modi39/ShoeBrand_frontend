@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeBrand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            <nav>
+                <svg  class="close" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 30 30">
+                    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16.414,15 c0,0,3.139,3.139,3.293,3.293c0.391,0.391,0.391,1.024,0,1.414c-0.391,0.391-1.024,0.391-1.414,0C18.139,19.554,15,16.414,15,16.414 s-3.139,3.139-3.293,3.293c-0.391,0.391-1.024,0.391-1.414,0c-0.391-0.391-0.391-1.024,0-1.414C10.446,18.139,13.586,15,13.586,15 s-3.139-3.139-3.293-3.293c-0.391-0.391-0.391-1.024,0-1.414c0.391-0.391,1.024-0.391,1.414,0C11.861,10.446,15,13.586,15,13.586 s3.139-3.139,3.293-3.293c0.391-0.391,1.024-0.391,1.414,0c0.391,0.391,0.391,1.024,0,1.414C19.554,11.861,16.414,15,16.414,15z"></path>
+                </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                    
+                </ul>
+                
+            </nav>
+            <?xml version="1.0" ?>
+                <svg class="menu" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                </svg>
+        </header>
+        <section class="hero">
+            <h1>Regain your confidence on the court.</h1>
+            <p class="subhead">A shoe built with a purpose and to take your game to the next level.</p>
+            <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48"  fill="none" stroke="black" stroke-width="1">
+                <line x1="12" y1="6" x2="12" y2="44"></line>
+                <polyline points="19 37 12 44 5 37"></polyline>
+            </svg>
+              
+              
+        </section>
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="images/andres-jasso-PqbL_mxmaUE-unsplash.jpg" alt="another shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="images/ryan-plomp-bySPt2lySzg-unsplash.jpg" alt="another shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="images/maksim-larin-NOpsC3nWTzY-unsplash.jpg" alt="another shoe">
+            </div>
+        </section>
+    </div>
+    <script>
+        const menu=document.querySelector('.menu')
+        const close=document.querySelector('.close')
+        const nav=document.querySelector('nav')
+
+        menu.addEventListener('click',()=>{
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click',()=>{
+            nav.classList.remove('open-nav')
+        })
+
+    </script>
+</body>
+</html>
